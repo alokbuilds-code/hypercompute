@@ -1,0 +1,94 @@
+{
+  "project": "NVIDIA — Beyond Acceleration",
+  "editorial_format": "Documentary & Technology Editorial Experience",
+  "assets": {
+    "brand": [
+      {
+        "file": "assets/brand/nvidia_logo_white.svg",
+        "description": "Authentic monochrome white NVIDIA vector logo for the cinematic brand ident intro",
+        "verified": true
+      },
+      {
+        "file": "assets/brand/nvidia_logo.svg",
+        "description": "Primary NVIDIA logo with strategic green eye and crisp white typography for global header",
+        "verified": true
+      },
+      {
+        "file": "assets/brand/nvidia_eye.svg",
+        "description": "Signature NVIDIA spiral eye icon in #76B900",
+        "verified": true
+      }
+    ],
+    "photography": [
+      {
+        "file": "assets/images/jensen_huang.jpg",
+        "subject": "Jensen Huang, Co-founder, President & CEO of NVIDIA",
+        "provenance": "Official high-resolution portrait photograph",
+        "verified": true
+      },
+      {
+        "file": "assets/images/jensen_engineers.jpg",
+        "subject": "Jensen Huang collaborating with engineering teams and robotics in research setting",
+        "provenance": "NVIDIA corporate & academic collaboration archive",
+        "verified": true
+      },
+      {
+        "file": "assets/images/jensen_chip_signing.jpg",
+        "subject": "Jensen Huang inspecting and signing DGX AI supercomputing silicon in hardware laboratory",
+        "provenance": "Historical hardware launch archive",
+        "verified": true
+      },
+      {
+        "file": "assets/images/nvidia_headquarters.jpg",
+        "subject": "NVIDIA Endeavor Building, Santa Clara Headquarters",
+        "provenance": "Architectural photography of Endeavor (completed 2017)",
+        "verified": true
+      },
+      {
+        "file": "assets/images/nvidia_campus_aerial.jpg",
+        "subject": "NVIDIA Santa Clara Silicon Valley Campus aerial view (Endeavor & Voyager)",
+        "provenance": "Architectural campus aerial archive",
+        "verified": true
+      },
+      {
+        "file": "assets/images/geforce_256_classic.jpg",
+        "subject": "The original 1999 NVIDIA GeForce 256 (NV10) graphics accelerator board",
+        "provenance": "Hardware history archive, the world's first GPU",
+        "verified": true
+      },
+      {
+        "file": "assets/images/dgx_gb200_rack.jpg",
+        "subject": "NVIDIA DGX GB200 NVL72 liquid-cooled AI data center supercomputer rack",
+        "provenance": "Public NVIDIA supercomputing infrastructure release",
+        "verified": true
+      }
+    ],
+    "schematics": [
+      {
+        "file": "assets/images/blackwell_die.svg",
+        "subject": "NVIDIA Blackwell B200 Ultra dual-die architecture with 10 TB/s NVLink-C2C and 208B transistors",
+        "verified": true
+      },
+      {
+        "file": "assets/images/rtx4090.svg",
+        "subject": "GeForce RTX 4090 Ada Lovelace AD102 architecture with DLSS 3.5 and Shader Execution Reordering",
+        "verified": true
+      },
+      {
+        "file": "assets/images/drive_thor.svg",
+        "subject": "NVIDIA DRIVE Thor centralized AV & cockpit superchip architecture",
+        "verified": true
+      },
+      {
+        "file": "assets/images/omniverse_digital_twin.svg",
+        "subject": "NVIDIA Omniverse OpenUSD digital twin and Isaac physical AI synthetic simulation pipeline",
+        "verified": true
+      },
+      {
+        "file": "assets/images/research_quantum.svg",
+        "subject": "Hybrid Quantum-Classical Supercomputing with cuQuantum and CUDA-Q",
+        "verified": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none" aria-label="NVIDIA Ada Lovelace Architecture">
+  <defs>
+    <linearGradient id="adaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080808"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </linearGradient>
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#76B900" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#76B900" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#adaGrad)"/>
+
+  <!-- AD102 Silicon Outline -->
+  <rect x="80" y="40" width="640" height="420" rx="8" fill="#141414" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="80" y="40" width="640" height="50" rx="6" fill="#0d0d0d" stroke="#222"/>
+  <text x="110" y="72" fill="#fff" font-family="sans-serif" font-weight="bold" font-size="15" letter-spacing="1">GEFORCE RTX 4090 / AD102 ARCHITECTURE</text>
+  <text x="690" y="72" fill="#76B900" font-family="monospace" font-size="11" text-anchor="end">76.3B TRANSISTORS / TSMC 4N</text>
+
+  <!-- GPC Clusters Grid -->
+  <g fill="#1a1a1a" stroke="#333" stroke-width="1">
+    <!-- GPC 1 to 6 Blocks -->
+    <rect x="110" y="110" width="170" height="150" rx="4"/>
+    <rect x="315" y="110" width="170" height="150" rx="4"/>
+    <rect x="520" y="110" width="170" height="150" rx="4"/>
+
+    <rect x="110" y="280" width="170" height="150" rx="4"/>
+    <rect x="315" y="280" width="170" height="150" rx="4"/>
+    <rect x="520" y="280" width="170" height="150" rx="4"/>
+  </g>
+
+  <!-- GPC Annotations -->
+  <g font-family="monospace" font-size="10" fill="#76B900">
+    <text x="195" y="130" text-anchor="middle">GPC 0 : 12x SM</text>
+    <text x="400" y="130" text-anchor="middle">GPC 1 : 12x SM</text>
+    <text x="605" y="130" text-anchor="middle">GPC 2 : 12x SM</text>
+    <text x="195" y="300" text-anchor="middle">GPC 3 : 12x SM</text>
+    <text x="400" y="300" text-anchor="middle">GPC 4 : 12x SM</text>
+    <text x="605" y="300" text-anchor="middle">GPC 5 : 12x SM</text>
+  </g>
+
+  <!-- Micro-architecture features in each GPC -->
+  <g fill="#242424" stroke="#76B900" stroke-width="0.75" opacity="0.9">
+    <!-- Sub-blocks inside GPC 0 -->
+    <rect x="125" y="145" width="65" height="45" rx="2"/>
+    <rect x="200" y="145" width="65" height="45" rx="2"/>
+    <rect x="125" y="200" width="140" height="45" rx="2" fill="#1e2e10" stroke="#76B900"/>
+
+    <!-- Sub-blocks inside GPC 1 -->
+    <rect x="330" y="145" width="65" height="45" rx="2"/>
+    <rect x="405" y="145" width="65" height="45" rx="2"/>
+    <rect x="330" y="200" width="140" height="45" rx="2" fill="#1e2e10" stroke="#76B900"/>
+
+    <!-- Sub-blocks inside GPC 2 -->
+    <rect x="535" y="145" width="65" height="45" rx="2"/>
+    <rect x="610" y="145" width="65" height="45" rx="2"/>
+    <rect x="535" y="200" width="140" height="45" rx="2" fill="#1e2e10" stroke="#76B900"/>
+  </g>
+
+  <g font-family="monospace" font-size="8" fill="#ddd" text-anchor="middle">
+    <text x="157" y="172">4th GEN TC</text>
+    <text x="232" y="172">3rd GEN RT</text>
+    <text x="195" y="227" fill="#76B900" font-weight="bold">DLSS 3.5 OFA</text>
+
+    <text x="362" y="172">4th GEN TC</text>
+    <text x="437" y="172">3rd GEN RT</text>
+    <text x="400" y="227" fill="#76B900" font-weight="bold">SHADER REORDER</text>
+
+    <text x="567" y="172">4th GEN TC</text>
+    <text x="642" y="172">3rd GEN RT</text>
+    <text x="605" y="227" fill="#76B900" font-weight="bold">72MB L2 CACHE</text>
+  </g>
+
+  <!-- Key Specs Footer -->
+  <line x1="80" y1="440" x2="720" y2="440" stroke="#333"/>
+  <text x="110" y="452" fill="#888" font-family="monospace" font-size="9">16,384 CUDA CORES / 512 TENSOR CORES / 128 RT CORES / 24GB GDDR6X @ 1,008 GB/s</text>
+</svg>

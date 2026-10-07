@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVIDIA — Beyond Acceleration | Documentary &amp; Technology Editorial</title>
+  <meta name="description" content="A monumental technology editorial and documentary experience exploring NVIDIA's evolution: the people, architecture, computing breakthroughs, and the AI era.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/brand/nvidia_eye.svg">
+
+  <!-- Modular Stylesheet Suite -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Vendor Scripts (Local Fallback) -->
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+</head>
+<body class="intro-active">
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to story content</a>
+
+  <!-- ==========================================================================
+       01 — DEDICATED CINEMATIC NVIDIA INTRO (5.5s - 6.0s Sequence)
+       ========================================================================== -->
+  <div id="cinematic-intro" class="cinematic-intro" aria-label="NVIDIA Brand Introduction" role="dialog" aria-modal="true">
+    <button id="intro-skip-btn" class="intro-skip-btn" aria-label="Skip Introduction">SKIP INTRO [ESC]</button>
+    <div class="intro-content">
+      <img id="intro-logo" class="intro-logo-svg" src="assets/brand/nvidia_logo_white.svg" alt="NVIDIA">
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       02 — GLOBAL NAVIGATION & STORY TIMELINE HEADER
+       ========================================================================== -->
+  <header class="global-header" role="banner">
+    <div class="header-inner">
+      <a href="#prologue" class="brand-anchor" aria-label="NVIDIA Experience Home">
+        <img src="assets/brand/nvidia_logo.svg" alt="NVIDIA" class="brand-logo-svg">
+      </a>
+
+      <!-- Chapter Navigation Links -->
+      <nav class="nav-links-wrapper" aria-label="Story Chapters">
+        <ul class="nav-links-list">
+          <li class="nav-link-item active"><a href="#jensen-vision">Vision</a></li>
+          <li class="nav-link-item"><a href="#people-culture-pinned">People &amp; Labs</a></li>
+          <li class="nav-link-item"><a href="#headquarters">Campus</a></li>
+          <li class="nav-link-item"><a href="#tech-progression-pinned">The Pipeline</a></li>
+          <li class="nav-link-item"><a href="#pinned-products">Inventions</a></li>
+          <li class="nav-link-item"><a href="#datacenter-ai">AI Infrastructure</a></li>
+          <li class="nav-link-item"><a href="#gaming-rtx">RTX</a></li>
+          <li class="nav-link-item"><a href="#physical-ai">Physical AI</a></li>
+          <li class="nav-link-item"><a href="#quantum-research">Research</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Telemetry & Quick Search -->
+      <div class="header-actions">
+        <div class="telemetry-indicator" title="Current story narrative chapter">
+          <span class="pulse-dot"></span>
+          <span id="telemetry-chapter-text">CH 01 / PROLOGUE</span>
+        </div>
+        <button id="search-trigger-btn" class="search-trigger-btn" aria-label="Open Command Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>INDEX</span>
+          <span class="kbd-badge">&ShortDownArrow;K</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Reading Timeline Progress Ribbon -->
+    <div class="story-timeline-ribbon" aria-hidden="true">
+      <div id="story-progress-bar" class="story-timeline-fill"></div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT: DOCUMENTARY STORY FLOW
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- ======================================================================
+         DOCUMENTARY HERO: BEYOND ACCELERATION
+         ====================================================================== -->
+    <section id="prologue" class="hero-documentary-stage" data-chapter-num="01" data-chapter-title="PROLOGUE">
+      <div class="editorial-container">
+        <div class="hero-split-layout">
+          <div class="hero-editorial-column">
+            <div class="hero-eyebrow">A TECHNOLOGY DOCUMENTARY</div>
+            <h1 class="monumental-heading">
+              <span class="hero-title-line">BEYOND</span>
+              <span class="hero-title-line">ACCELERATION.</span>
+            </h1>
+            <p class="hero-lead-text">
+              The thirty-year chronicle of specialized computing, the invention of the GPU, and the architecture powering the AI era.
+            </p>
+            <div class="hero-scroll-cue">
+              <span class="scroll-cue-indicator"></span>
+              <span>SCROLL TO EXPLORE THE STORY</span>
+            </div>
+          </div>
+          <div class="hero-media-column">
+            <div class="hero-silicon-showcase">
+              <img src="assets/images/blackwell_die.svg" alt="NVIDIA Silicon Architecture Die" class="hero-silicon-img">
+              <div class="hero-silicon-plate">
+                <div class="silicon-plate-label">SILICON ARCHITECTURE ARCHIVE</div>
+                <div class="silicon-plate-spec">1999 NV10 &rarr; 2024 BLACKWELL B200 ULTRA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAPTER 02: JENSEN HUANG & THE VISION (SLOW + CINEMATIC)
+         ====================================================================== -->
+    <section id="jensen-vision" class="narrative-section jensen-reveal-section" data-chapter-num="02" data-chapter-title="JENSEN HUANG">
+      <div class="editorial-container">
+        <div class="chapter-meta">
+          <span class="chapter-num">CHAPTER 02</span>
+          <span class="chapter-separator">/</span>
+          <span class="chapter-title-tag">THE ARCHITECT</span>
+        </div>
+
+        <div class="split-editorial-grid">
+          <!-- Large Jensen Huang Portrait Stage with Scroll-Driven Scale -->
+          <div class="jensen-portrait-stage">
+            <img src="assets/images/jensen_huang.jpg" alt="Jensen Huang, Co-founder, President &amp; CEO of NVIDIA" class="jensen-portrait-img">
+            <div class="portrait-badge-overlay">
+              <div>
+                <div class="portrait-badge-name">Jensen Huang</div>
+                <div class="portrait-badge-title">Co-founder, President &amp; CEO</div>
+              </div>
+              <div class="portrait-badge-meta">
+                <div>SANTA CLARA, CA</div>
+                <div style="color: var(--color-brand-green); font-weight: bold;">1993 &mdash; PRESENT</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Statements (Line-by-Line Scrub Reveal) -->
+          <div class="jensen-narrative-copy">
+            <blockquote class="monumental-quote">
+              <span class="quote-line">From graphics,</span>
+              <span class="quote-line">to accelerated computing,</span>
+              <span class="quote-line">to the AI era.</span>
+            </blockquote>
+            <p class="editorial-lead">
+              Technology changes. The ambition to reinvent computing doesn't.
+            </p>
+            <p>
+              Over three decades, Jensen Huang guided NVIDIA from a 3-person startup founded over roadside diner breakfasts into the world's premier computing architecture powerhouse. The governing ethos has remained resolute: solve computing problems that ordinary general-purpose processors cannot touch.
+            </p>
+
+            <div class="leadership-pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-num">01 / FIRST PRINCIPLES</div>
+                <div class="pillar-heading">Zero-Billion-Dollar Markets</div>
+                <p class="pillar-desc">Inventing technologies for markets that do not yet exist, from CUDA in 2006 to Omniverse in 2020.</p>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-num">02 / FLAT EXECUTION</div>
+                <div class="pillar-heading">Speed of Light</div>
+                <p class="pillar-desc">Direct communication architecture where information moves friction-free across 29,600+ engineers worldwide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAPTER 03: PEOPLE & CULTURE (DOCUMENTARY + LAYERED PINNED SEQUENCE)
+         ====================================================================== -->
+    <section id="people-culture-pinned" class="narrative-section pinned-people-stage" data-chapter-num="03" data-chapter-title="PEOPLE &amp; LABS">
+      <div class="editorial-container">
+        <div class="chapter-meta">
+          <span class="chapter-num">CHAPTER 03</span>
+          <span class="chapter-separator">/</span>
+          <span class="chapter-title-tag">THE FOUNDERS &amp; 29,600 BUILDERS</span>
+        </div>
+
+        <h2 class="section-heading-xl">CULTURE OF REINVENTION.</h2>
+
+        <!-- Genesis Story Card -->
+        <div class="culture-history-banner">
+          <div>
+            <div class="genesis-tag">April 5, 1993 &bull; Denny's Diner, San Jose</div>
+            <h3 style="font-size: var(--fs-heading-md); color: #fff; margin-bottom: 12px;">Where Accelerated Computing Began</h3>
+            <p>
+              NVIDIA was conceived at a roadside Denny's booth in San Jose, California, where Jensen Huang, Chris Malachowsky, and Curtis Priem met over endless coffee. Their radical hypothesis: PC graphics would evolve from 2D spreadsheets to immersive 3D simulations requiring dedicated, highly parallel silicon coprocessors.
+            </p>
+            <div class="founders-signature-strip">
+              <div class="founder-pill">
+                <strong>Jensen Huang</strong>
+                Core Systems &amp; Vision
+              </div>
+              <div class="founder-pill">
+                <strong>Chris Malachowsky</strong>
+                Hardware Architecture &amp; ICs
+              </div>
+              <div class="founder-pill">
+                <strong>Curtis Priem</strong>
+                Graphics Processor Software
+              </div>
+            </div>
+          </div>
+
+          <div style="border-left: 1px solid var(--border-medium); padding-left: clamp(20px, 3vw, 40px);">
+            <div class="genesis-tag" style="color: #fff;">The Cultural Operating System</div>
+            <p style="margin-bottom: 16px;">
+              At NVIDIA, organizational structure mirrors micro-architecture: low latency, wide parallel bus, and zero unnecessary hierarchy. Every employee is empowered to query ground-truth physics.
+            </p>
+            <div style="font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--color-brand-green); font-weight: bold;">
+              &ldquo;Run as fast as you can. When you fall, get up and run again.&rdquo;
+            </div>
+          </div>
+        </div>
+
+        <!-- Layered Pinned Photography Sequence -->
+        <div class="people-layers-container">
+          <!-- Layer 1: Collaborating in Robotics Lab -->
+          <img src="assets/images/jensen_engineers.jpg" alt="Jensen Huang collaborating in robotics laboratory" class="people-image-layer people-image-layer--01">
+          <!-- Layer 2: Hardware Validation Silicon Lab -->
+          <img src="assets/images/jensen_chip_signing.jpg" alt="Jensen Huang inspecting silicon hardware in lab" class="people-image-layer people-image-layer--02">
+          <!-- Layer 3: Campus Aerial Community -->
+          <img src="assets/images/nvidia_campus_aerial.jpg" alt="NVIDIA Santa Clara Silicon Valley Campus" class="people-image-layer people-image-layer--03">
+        </div>
+
+        <!-- Discipline Tags Strip (Scrub-Activated) -->
+        <div class="discipline-tags-strip" role="list" aria-label="NVIDIA Engineering Disciplines">
+          <div class="discipline-tag-item active" role="listitem">ENGINEERING</div>
+          <div class="discipline-tag-item" role="listitem">AI RESEARCH</div>
+          <div class="discipline-tag-item" role="listitem">SOFTWARE</div>
+          <div class="discipline-tag-item" role="listitem">HARDWARE</div>
+          <div class="discipline-tag-item" role="listitem">ROBOTICS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAPTER 04: ARCHITECTURE & CAMPUS (ARCHITECTURAL + PARALLAX)
+         ====================================================================== -->
+    <section id="headquarters" class="narrative-section" data-chapter-num="04" data-chapter-title="CAMPUS ARCHITECTURE">
+      <div class="editorial-container">
+        <div class="chapter-meta">
+          <span class="chapter-num">CHAPTER 04</span>
+          <span class="chapter-separator">/</span>
+          <span class="chapter-title-tag">THE MONUMENTAL CAMPUS</span>
+        </div>
+
+        <h2 class="section-heading-xl">ENDEAVOR &amp; VOYAGER.</h2>
+        <p class="editorial-lead" style="max-width: 65ch; margin-bottom: var(--space-xl);">
+          The Santa Clara headquarters buildings are designed around the triangle &mdash; the fundamental geometric polygon of 3D computer graphics.
+        </p>
+
+        <!-- Architectural Panorama with Blueprint Reticle Overlay -->
+        <div class="architecture-panorama-stage">
+          <img src="assets/images/nvidia_headquarters.jpg" alt="NVIDIA Endeavor Headquarters Building Santa Clara" class="architecture-panorama-img" loading="lazy">
+          <div class="architectural-blueprint-overlay" aria-hidden="true"></div>
+          <div class="panorama-caption-plate">
+            <div>
+              <div class="panorama-title">ENDEAVOR HEADQUARTERS</div>
+              <div class="panorama-sub">500,000 SQ FT &bull; COMPLETED 2017 &bull; SANTA CLARA, CA</div>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--color-brand-green); font-weight: bold;">
+              LEED PLATINUM &bull; TRIANGULAR MONUMENTALISM
+            </div>
+          </div>
+        </div>
+
+        <!-- Campus Architectural Specs -->
+        <div class="campus-specs-grid">
+          <div class="spec-cell">
+            <div class="spec-cell-value">1.25M</div>
+            <div class="spec-cell-label">Total Square Feet Across Endeavor &amp; Voyager Campuses</div>
+          </div>
+          <div class="spec-cell">
+            <div class="spec-cell-value">&Delta; TRIANGLE</div>
+            <div class="spec-cell-label">Core Structural Geometry Reflecting 3D Silicon Polygons</div>
+          </div>
+          <div class="spec-cell">
+            <div class="spec-cell-value">100%</div>
+            <div class="spec-cell-label">Renewable Energy Powering Headquarters Operations</div>
+          </div>
+          <div class="spec-cell">
+            <div class="spec-cell-value">BIOPHILIC</div>
+            <div class="spec-cell-label">Sunlight-Optimized Micro-Climates and Indoor Forest Canopies</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAPTER 05: HARD PROGRESSION (PEOPLE → HARDWARE)
+         ====================================================================== -->
+    <section id="tech-progression-pinned" class="narrative-section progression-pinned-stage" data-chapter-num="05" data-chapter-title="TECH PIPELINE">
+      <div class="editorial-container">
+        <div class="chapter-meta">
+          <span class="chapter-num">CHAPTER 05</span>
+          <span class="chapter-separator">/</span>
+          <span class="chapter-title-tag">THE CHAIN OF INVENTION</span>
+        </div>
+
+        <h2 class="section-heading-xl">FROM PEOPLE TO INTELLIGENCE.</h2>
+        <p class="editorial-lead">
+          Scroll through thirty years of continuous compounding: from human ideas to planetary AI factories.
+        </p>
+
+        <!-- Stepper Cards Display -->
+        <div class="progression-steps-display">
+          <!-- Step 1: PERSON -->
+          <div class="progression-step-card active">
+            <div>
+              <div class="progression-wordmark">01 &bull; <span>PERSON</span></div>
+              <p style="margin-top: 16px; font-size: 18px; color: var(--color-text-secondary); max-width: 44ch;">
+                Engineers, researchers, and first-principles thinkers driven by unsolved challenges.
+              </p>
+            </div>
+            <img src="assets/brand/nvidia_eye.svg" alt="NVIDIA Mark" style="width: 140px; height: 140px; opacity: 0.85;">
+          </div>
+
+          <!-- Step 2: ENGINEERING -->
+          <div class="progression-step-card">
+            <div>
+              <div class="progression-wordmark">02 &bull; <span>ENGINEERING</span></div>
+              <p style="margin-top: 16px; font-size: 18px; color: var(--color-text-secondary); max-width: 44ch;">
+                Full-stack co-design: algorithms, architecture, chips, systems, and software.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 48px; color: var(--color-brand-green); font-weight: bold;">
+              EDA &bull; CO-DESIGN
+            </div>
+          </div>
+
+          <!-- Step 3: CIRCUIT -->
+          <div class="progression-step-card">
+            <div>
+              <div class="progression-wordmark">03 &bull; <span>CIRCUIT</span></div>
+              <p style="margin-top: 16px; font-size: 18px; color: var(--color-text-secondary); max-width: 44ch;">
+                Atomic-precision lithography: TSMC 4NP process, billions of interconnects.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 48px; color: var(--color-brand-green); font-weight: bold;">
+              4NP &bull; 208B TX
+            </div>
+          </div>
+
+          <!-- Step 4: CHIP -->
+          <div class="progression-step-card">
+            <div>
+              <div class="progression-wordmark">04 &bull; <span>CHIP</span></div>
+              <p style="margin-top: 16px; font-size: 18px; color: var(--color-text-secondary); max-width: 44ch;">
+                From the NV10 graphics chip to the monolithic dual-die Blackwell B200 accelerator.
+              </p>
+            </div>
+            <img src="assets/images/blackwell_die.svg" alt="Blackwell Die" style="width: 220px; height: 140px; object-fit: contain;">
+          </div>
+
+          <!-- Step 5: GPU -->
+          <div class="progression-step-card">
+            <div>
+              <div class="progression-wordmark">05 &bull; <span>GPU</span></div>
+              <p style="margin-top: 16px; font-size: 18px; color: var(--color-text-secondary); max-width: 44ch;">
+                Parallel computing democratized via CUDA, transforming pixels into parallel math.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 48px; color: var(--color-brand-green); font-weight: bold;">
+              CUDA ARCH
+            </div>
+          </div>
+
+          <!-- Step 6: COMPUTE -->
+          <div class="progression-step-card">
+            <div>
+              <div class="progression-wordmark">06 &bull; <span>COMPUTE</span></div>
+              <p style="margin-top: 16px; font-size: 18px; color: var(--color-text-secondary); max-width: 44ch;">
+                Specialized Tensor Cores and Transformer Engines processing neural network matrices.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 48px; color: var(--color-brand-green); font-weight: bold;">
+              NVFP4 &bull; TENSOR
+            </div>
+          </div>
+
+          <!-- Step 7: AI FACTORY -->
+          <div class="progression-step-card">
+            <div>
+              <div class="progression-wordmark">07 &bull; <span>AI FACTORY</span></div>
+              <p style="margin-top: 16px; font-size: 18px; color: var(--color-text-secondary); max-width: 44ch;">
+                Data-center scale supercomputers operating as monolithic unified intelligence engines.
+              </p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 48px; color: var(--color-brand-green); font-weight: bold;">
+              DGX GB200
+            </div>
+          </div>
+        </div>
+
+        <!-- Stepper Ribbon Indicators -->
+        <div class="progression-stepper-ribbon" role="list">
+          <div class="step-indicator-pill active" role="listitem">01 PERSON</div>
+          <div class="step-indicator-pill" role="listitem">02 ENGINEERING</div>
+          <div class="step-indicator-pill" role="listitem">03 CIRCUIT</div>
+          <div class="step-indicator-pill" role="listitem">04 CHIP</div>
+          <div class="step-indicator-pill" role="listitem">05 GPU</div>
+          <div class="step-indicator-pill" role="listitem">06 COMPUTE</div>
+          <div class="step-indicator-pill" role="listitem">07 AI FACTORY</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAPTER 06: PINNED PRODUCTS & TRANSFORMATIONAL SHOWCASE
+         ====================================================================== -->
+    <section id="pinned-products" class="narrative-section pinned-products-section" data-chapter-num="06" data-chapter-title="INVENTIONS">
+      <div class="editorial-container">
+        <div class="chapter-meta">
+          <span class="chapter-num">CHAPTER 06</span>
+          <span class="chapter-separator">/</span>
+          <span class="chapter-title-tag">THE INVENTIONS</span>
+        </div>
+
+        <h2 class="section-heading-xl">PINNED LINEAGE SHOWCASE.</h2>
+        <p class="editorial-lead" style="margin-bottom: var(--space-md);">
+          Scroll through seven foundational hardware and platform milestones.
+        </p>
+
+        <!-- Product Scrub Progress Bar -->
+        <div class="product-scrub-meter">
+          <span class="product-scrub-text" style="font-weight: bold;">01 / 07</span>
+          <div class="scrub-track">
+            <div class="scrub-fill"></div>
+          </div>
+          <span>SCROLL TO CYCLE PRODUCTS</span>
+        </div>
+
+        <!-- Pinned Viewport Container -->
+        <div class="products-pinned-viewport">
+          
+          <!-- Product 1: GeForce 256 -->
+          <div class="product-pinned-item active" data-product-index="0">
+            <div class="product-pinned-media">
+              <img src="assets/images/geforce_256_classic.jpg" alt="1999 GeForce 256 Graphics Card">
+            </div>
+            <div class="product-pinned-info">
+              <div class="product-tag">1999 &bull; The World's First GPU</div>
+              <h3 class="product-title">GeForce 256 (NV10)</h3>
+              <p>Defined the GPU category with hardware transform, lighting, and 10 million polygons per second rendering engine on a single silicon chip.</p>
+              <div class="product-specs-table">
+                <div class="product-spec-row"><span class="spec-key">Year</span><span class="spec-val">1999</span></div>
+                <div class="product-spec-row"><span class="spec-key">Process</span><span class="spec-val">TSMC 220nm</span></div>
+                <div class="product-spec-row"><span class="spec-key">Transistors</span><span class="spec-val">17 Million</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: CUDA -->
+          <div class="product-pinned-item" data-product-index="1">
+            <div class="product-pinned-media" style="padding: 30px; background: #071008;">
+              <div style="font-family: var(--font-mono); font-size: 14px; color: var(--color-brand-green); line-height: 1.6;">
+                <span style="color: #888;">// CUDA Parallel Computing Architecture</span><br>
+                __global__ void MatMul(float* A, float* B, float* C) {<br>
+                &nbsp;&nbsp;int idx = blockIdx.x * blockDim.x + threadIdx.x;<br>
+                &nbsp;&nbsp;C[idx] = A[idx] * B[idx];<br>
+                }<br>
+                <span style="color: #fff;">// 5.1 Million Programmers Worldwide</span>
+              </div>
+            </div>
+            <div class="product-pinned-info">
+              <div class="product-tag">2006 &bull; General-Purpose Computing</div>
+              <h3 class="product-title">CUDA Architecture</h3>
+              <p>Transformed graphics chips into massively parallel supercomputers using standard C/C++, unleashing the foundation for modern deep learning.</p>
+              <div class="product-specs-table">
+                <div class="product-spec-row"><span class="spec-key">Year</span><span class="spec-val">2006</span></div>
+                <div class="product-spec-row"><span class="spec-key">Ecosystem</span><span class="spec-val">&gt; 5.1 Million Developers</span></div>
+                <div class="product-spec-row"><span class="spec-key">Milestone</span><span class="spec-val">AlexNet Deep Learning (2012)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: RTX 4090 / Ada -->
+          <div class="product-pinned-item" data-product-index="2">
+            <div class="product-pinned-media">
+              <img src="assets/images/rtx4090.svg" alt="RTX 4090 Architecture">
+            </div>
+            <div class="product-pinned-info">
+              <div class="product-tag">2018-2024 &bull; Neural Ray Tracing</div>
+              <h3 class="product-title">GeForce RTX &amp; Ada Lovelace</h3>
+              <p>Combined hardware BVH ray tracing cores with AI Tensor Cores and DLSS 3.5 neural frame generation.</p>
+              <div class="product-specs-table">
+                <div class="product-spec-row"><span class="spec-key">Architecture</span><span class="spec-val">Ada Lovelace AD102</span></div>
+                <div class="product-spec-row"><span class="spec-key">CUDA Cores</span><span class="spec-val">16,384</span></div>
+                <div class="product-spec-row"><span class="spec-key">Transistors</span><span class="spec-val">76.3 Billion</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: Grace CPU -->
+          <div class="product-pinned-item" data-product-index="3">
+            <div class="product-pinned-media" style="padding: 30px; background: #071008; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <div style="font-family: var(--font-mono); font-size: 28px; color: var(--color-brand-green); font-weight: bold; margin-bottom: 12px;">
+                NVIDIA GRACE CPU
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 14px; color: #fff;">
+                72 Arm Neoverse V2 Cores &bull; 900 GB/s NVLink-C2C
+              </div>
+            </div>
+            <div class="product-pinned-info">
+              <div class="product-tag">2020 &bull; Data Center Superchip</div>
+              <h3 class="product-title">NVIDIA Grace CPU</h3>
+              <p>First data center CPU designed for giant-scale AI and high-performance computing, with coherent memory interconnect to GPUs.</p>
+              <div class="product-specs-table">
+                <div class="product-spec-row"><span class="spec-key">Cores</span><span class="spec-val">72 Arm Neoverse V2</span></div>
+                <div class="product-spec-row"><span class="spec-key">Memory</span><span class="spec-val">LPDDR5X @ 546 GB/s</span></div>
+                <div class="product-spec-row"><span class="spec-key">Coherent Link</span><span class="spec-val">900 GB/s NVLink-C2C</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5: BlueField DPU -->
+          <div class="product-pinned-item" data-product-index="4">
+            <div class="product-pinned-media" style="padding: 30px; background: #071008; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+              <div style="font-family: var(--font-mono); font-size: 28px; color: var(--color-brand-green); font-weight: bold; margin-bottom: 12px;">
+                BLUEFIELD-3 DPU
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 14px; color: #fff;">
+                400 Gb/s Ethernet &amp; InfiniBand &bull; Zero Trust Security
+              </div>
+            </div>
+            <div class="product-pinned-info">
+              <div class="product-tag">2022 &bull; Data Processing Unit</div>
+              <h3 class="product-title">BlueField-3 DPU</h3>
+              <p>Offloads, accelerates, and isolates data center infrastructure workloads, networking, and zero-trust security from host CPUs.</p>
+              <div class="product-specs-table">
+                <div class="product-spec-row"><span class="spec-key">Networking</span><span class="spec-val">400 Gb/s Line Rate</span></div>
+                <div class="product-spec-row"><span class="spec-key">PCIe</span><span class="spec-val">Gen 5.0 (32 Lanes)</span></div>
+                <div class="product-spec-row"><span class="spec-key">Security</span><span class="spec-val">Hardware Root-of-Trust</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6: Blackwell B200 -->
+          <div class="product-pinned-item" data-product-index="5">
+            <div class="product-pinned-media">
+              <img src="assets/images/blackwell_die.svg" alt="Blackwell B200 Architecture">
+            </div>
+            <div class="product-pinned-info">
+              <div class="product-tag">2024 &bull; The World's Most Powerful Chip</div>
+              <h3 class="product-title">Blackwell B200 Ultra</h3>
+              <p>Two reticle-limited dies fused via a 10 TB/s NVLink-C2C interconnect into a single coherent 208-billion transistor GPU.</p>
+              <div class="product-specs-table">
+                <div class="product-spec-row"><span class="spec-key">Transistors</span><span class="spec-val">208 Billion</span></div>
+                <div class="product-spec-row"><span class="spec-key">NVLink-C2C</span><span class="spec-val">10 TB/s Bisection Bandwidth</span></div>
+                <div class="product-spec-row"><span class="spec-key">Memory</span><span class="spec-val">192GB HBM3e @ 8 TB/s</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7: DGX NVL72 -->
+          <div class="product-pinned-item" data-product-index="6">
+            <div class="product-pinned-media">
+              <img src="assets/images/dgx_gb200_rack.jpg" alt="DGX GB200 NVL72 Rack">
+            </div>
+            <div class="product-pinned-info">
+              <div class="product-tag">2024 &bull; Planetary AI Factory</div>
+              <h3 class="product-title">DGX GB200 NVL72</h3>
+              <p>A single liquid-cooled rack functioning as one giant 72-Blackwell supercomputer with 130 TB/s NVLink spine.</p>
+              <div class="product-specs-table">
+                <div class="product-spec-row"><span class="spec-key">GPUs / CPUs</span><span class="spec-val">72 B200 / 36 Grace CPUs</span></div>
+                <div class="product-spec-row"><span class="spec-key">AI Compute</span><span class="spec-val">1.4 Exaflops FP4</span></div>
+                <div class="product-spec-row"><span class="spec-key">Cooling</span><span class="spec-val">100% Liquid Cooled</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAPTER 07: AI & DATA CENTER INFRASTRUCTURE (MONUMENTAL + SCALE)
+         ====================================================================== -->
+    <section id="datacenter-ai" class="narrative-section narrative-section--surface" data-chapter-num="07" data-chapter-title="AI FACTORIES">
+      <div class="editorial-container">
+        <div class="chapter-meta">
+          <span class="chapter-num">CHAPTER 07</span>
+          <span class="chapter-separator">/</span>
+          <span class="chapter-title-tag">DATA CENTER SCALE</span>
+        </div>
+
+        <div class="datacenter-hero-grid">
+          <div class="datacenter-rack-media">
+            <img src="assets/images/dgx_gb200_rack.jpg" alt="NVIDIA DGX GB200 NVL72 AI Supercomputer Rack" loading="lazy">
+            <div class="rack-liquid-indicator">&bull; 100% DIRECT-TO-CHIP LIQUID COOLING</div>
+          </div>
+
+          <div>
+            <h2 class="section-heading-xl">ACCELERATED COMPUTING FOR THE AI ERA.</h2>
+            <p class="editorial-lead">
+              Computing has moved from individual chips to entire data centers operating as monolithic unified computers.
+            </p>
+
+            <!-- Scroll-revealed chain -->
+            <div class="ai-scale-chain">
+              <div class="ai-chain-node">GPU</div>
+              <span class="ai-chain-arrow">&rarr;</span>
+              <div class="ai-chain-node">COMPUTE</div>
+              <span class="ai-chain-arrow">&rarr;</span>
+              <div class="ai-chain-node">AI</div>
+              <span class="ai-chain-arrow">&rarr;</span>
+              <div class="ai-chain-node">DATA CENTER</div>
+              <span class="ai-chain-arrow">&rarr;</span>
+              <div class="ai-chain-node">INFERENCE</div>
+            </div>
+
+            <p style="margin-bottom: var(--space-md);">
+              Traditional computing produces retrieval tokens; AI factories produce intelligence tokens. The DGX GB200 NVL72 enables 30&times; faster real-time inference for trillion-parameter large language models while slashing power and footprint by up to 25&times;.
+            </p>
+
+            <div class="campus-specs-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: var(--space-lg);">
+              <div class="spec-cell">
+                <div class="spec-cell-value">130 TB/s</div>
+                <div class="spec-cell-label">NVLink Spine Bandwidth Across 72 Blackwell GPUs</div>
+              </div>
+              <div class="spec-cell">
+                <div class="spec-cell-value">25&times; LESS</div>
+                <div class="spec-cell-label">Power &amp; Cost for LLM Inference Over H100 Generation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAPTER 08: GAMING & REAL-TIME RAY TRACING (RTX) (FAST + CONTROLLED)
+         ====================================================================== -->
+    <section id="gaming-rtx" class="narrative-section" data-chapter-num="08" data-chapter-title="GEFORCE RTX">
+      <div class="editorial-container">
+        <div class="chapter-meta">
+          <span class="chapter-num">CHAPTER 08</span>
+          <span class="chapter-separator">/</span>
+          <span class="chapter-title-tag">NEURAL RENDERING</span>
+        </div>
+
+        <h2 class="section-heading-xl">GEFORCE RTX &amp; FULL PATH TRACING.</h2>
+        <p class="editorial-lead" style="max-width: 65ch;">
+          Experience how real-time AI and hardware-accelerated bounding volume hierarchy (BVH) traversal solved the holy grail of computer graphics.
+        </p>
+
+        <!-- Interactive Ray Tracing Toggle Visualizer -->
+        <div class="raytracing-interactive-box">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+            <div style="font-family: var(--font-mono); font-size: var(--fs-caption); color: #fff; font-weight: bold;">
+              INTERACTIVE RENDER COMPARISON:
+            </div>
+            <div class="rt-toggle-controls">
+              <button class="rt-mode-btn" data-rt-mode="raster">1990s RASTERIZATION</button>
+              <button class="rt-mode-btn active" data-rt-mode="pathtracing">RTX NEURAL PATH TRACING</button>
+            </div>
+          </div>
+
+          <div class="rt-canvas-frame">
+            <!-- Rasterization Sim View -->
+            <div id="rt-view-raster" class="rt-comparison-view" style="display: none; background: #0f170f;">
+              <div style="text-align: center; color: var(--color-text-secondary); padding: 20px;">
+                <div style="font-family: var(--font-mono); font-size: 20px; color: #aaa; margin-bottom: 8px;">[ STATIC BAKED LIGHTMAPS ]</div>
+                <p style="font-size: 14px; max-width: 44ch;">Zero real-time reflections &bull; Hard shadow artifacts &bull; No indirect light bouncing.</p>
+              </div>
+            </div>
+
+            <!-- Path Tracing Sim View -->
+            <div id="rt-view-pathtracing" class="rt-comparison-view" style="background: radial-gradient(circle at 50% 40%, rgba(118,185,0,0.25) 0%, #050a05 85%);">
+              <div style="text-align: center; color: #ffffff; padding: 20px;">
+                <div style="font-family: var(--font-mono); font-size: 22px; color: var(--color-brand-green); margin-bottom: 8px; font-weight: bold;">[ FULL RTX PATH TRACING + DLSS 3.5 ]</div>
+                <p style="font-size: 14px; max-width: 50ch; color: #ddd;">
+                  Full physically based multi-bounce indirect illumination, real-time caustics, and AI neural frame reconstruction running at over 120 FPS.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="rt-status-annotation" style="margin-top: 14px; font-family: var(--font-mono); font-size: var(--fs-mono-xs); color: var(--color-brand-green);">
+            FULL NEURAL PATH TRACING: Real-time physically accurate multi-bounce photon tracing, DLSS 3.5 Ray Reconstruction, infinite reflections.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAPTER 09: PHYSICAL AI & ROBOTICS (MECHANICAL + STRUCTURED)
+         ====================================================================== -->
+    <section id="physical-ai" class="narrative-section narrative-section--surface" data-chapter-num="09" data-chapter-title="PHYSICAL AI">
+      <div class="editorial-container">
+        <div class="chapter-meta">
+          <span class="chapter-num">CHAPTER 09</span>
+          <span class="chapter-separator">/</span>
+          <span class="chapter-title-tag">EMBODIED INTELLIGENCE</span>
+        </div>
+
+        <h2 class="section-heading-xl">THE ERA OF PHYSICAL AI.</h2>
+        <p class="editorial-lead">
+          AI models that understand the laws of physics, operate in 3D space, and manipulate the physical world.
+        </p>
+
+        <!-- Transformation Sequence -->
+        <div class="ai-scale-chain" style="margin-bottom: var(--space-xl);">
+          <div class="ai-chain-node">COMPUTING</div>
+          <span class="ai-chain-arrow">&rarr;</span>
+          <div class="ai-chain-node">SIMULATION</div>
+          <span class="ai-chain-arrow">&rarr;</span>
+          <div class="ai-chain-node">ROBOTICS</div>
+          <span class="ai-chain-arrow">&rarr;</span>
+          <div class="ai-chain-node">AUTONOMOUS VEHICLES</div>
+          <span class="ai-chain-arrow">&rarr;</span>
+          <div class="ai-chain-node">REAL WORLD</div>
+        </div>
+
+        <!-- Schematics Showcase: Drive Thor & Omniverse -->
+        <div class="editorial-grid-2">
+          <div>
+            <div style="border: 1px solid var(--border-medium); border-radius: 4px; overflow: hidden; background: #060b06; margin-bottom: var(--space-md);">
+              <img src="assets/images/drive_thor.svg" alt="NVIDIA DRIVE Thor Superchip Architecture" loading="lazy">
+            </div>
+            <h3 style="font-size: var(--fs-heading-sm); color: #fff; margin-bottom: 8px;">NVIDIA DRIVE Thor</h3>
+            <p style="font-size: var(--fs-caption); color: var(--color-text-secondary);">
+              Next-generation centralized automotive computer delivering 2,000 TFLOPS of FP4 compute for autonomous driving, automated parking, and generative AI cockpit interaction.
+            </p>
+          </div>
+
+          <div>
+            <div style="border: 1px solid var(--border-medium); border-radius: 4px; overflow: hidden; background: #060b06; margin-bottom: var(--space-md);">
+              <img src="assets/images/omniverse_digital_twin.svg" alt="NVIDIA Omniverse Digital Twin Platform" loading="lazy">
+            </div>
+            <h3 style="font-size: var(--fs-heading-sm); color: #fff; margin-bottom: 8px;">Omniverse &amp; Isaac Sim</h3>
+            <p style="font-size: var(--fs-caption); color: var(--color-text-secondary);">
+              Industrial digital twins built on OpenUSD and PhysX 5. Robots learn in millions of synthetic simulated worlds before physical hardware deployment.
+            </p>
+          </div>
+        </div>
+
+        <!-- The 3 Pillars of Physical AI -->
+        <div class="robotics-triad-grid">
+          <div class="triad-card">
+            <div>
+              <div class="triad-num">PILLAR 01</div>
+              <h4 class="triad-title">Project GR00T</h4>
+              <p class="triad-desc">Generalist foundation model for humanoid robot reasoning, multimodal coordination, and natural language instruction following.</p>
+            </div>
+          </div>
+          <div class="triad-card">
+            <div>
+              <div class="triad-num">PILLAR 02</div>
+              <h4 class="triad-title">Isaac Perceptor</h4>
+              <p class="triad-desc">Multi-camera 3D surround-vision stack for autonomous mobile robots operating in dynamic warehouses and manufacturing floors.</p>
+            </div>
+          </div>
+          <div class="triad-card">
+            <div>
+              <div class="triad-num">PILLAR 03</div>
+              <h4 class="triad-title">Isaac Manipulator</h4>
+              <p class="triad-desc">Accelerated motion generation and dexterous manipulation algorithms for high-speed industrial robotic arms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAPTER 10: RESEARCH & THE QUANTUM FUTURE
+         ====================================================================== -->
+    <section id="quantum-research" class="narrative-section" data-chapter-num="10" data-chapter-title="QUANTUM FUTURE">
+      <div class="editorial-container">
+        <div class="chapter-meta">
+          <span class="chapter-num">CHAPTER 10</span>
+          <span class="chapter-separator">/</span>
+          <span class="chapter-title-tag">THE FRONTIER</span>
+        </div>
+
+        <div class="split-editorial-grid">
+          <div>
+            <h2 class="section-heading-xl">HYBRID QUANTUM SUPERCOMPUTING.</h2>
+            <p class="editorial-lead">
+              Unifying classical GPU acceleration with quantum processing units (QPUs).
+            </p>
+            <p style="margin-bottom: 18px;">
+              NVIDIA CUDA-Q is an open-source, QPU-agnostic platform allowing researchers to write hybrid algorithms where sub-microsecond NVLink interconnects route classical computing to GPUs and quantum circuits to QPUs.
+            </p>
+            <div style="font-family: var(--font-mono); font-size: var(--fs-caption); color: var(--color-brand-green); font-weight: bold;">
+              cuQuantum &bull; Tensor Network Contraction &bull; State Vector Simulation
+            </div>
+          </div>
+
+          <div style="border: 1px solid var(--border-medium); border-radius: 4px; overflow: hidden; background: #060b06;">
+            <img src="assets/images/research_quantum.svg" alt="NVIDIA Hybrid Quantum Computing Architecture" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CLOSING EDITORIAL STATEMENT
+         ====================================================================== -->
+    <section class="narrative-section narrative-section--hero" style="border-bottom: none; text-align: center;">
+      <div class="editorial-container-reading">
+        <div class="chapter-meta" style="justify-content: center;">
+          <span class="chapter-title-tag">EPILOGUE</span>
+        </div>
+        <h2 class="monumental-heading" style="margin-left: auto; margin-right: auto; max-width: 14ch;">
+          THE NEXT ERA IS BEING BUILT NOW.
+        </h2>
+        <p class="editorial-lead" style="margin-left: auto; margin-right: auto;">
+          From a San Jose diner booth to the foundation of modern artificial intelligence and physical robotics, the journey of accelerated computing continues.
+        </p>
+        <div style="margin-top: var(--space-xl);">
+          <a href="#jensen-vision" class="intro-skip-btn" style="position: static; display: inline-block;">
+            REVISIT THE JOURNEY &uarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       COMMAND PALETTE / SEARCH MODAL
+       ========================================================================== -->
+  <div id="search-modal" class="search-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Index Search">
+    <div class="search-dialog-box">
+      <div class="search-input-header">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="search-query-field" class="search-query-field" placeholder="Search chapters, products, founders, or schematics..." autocomplete="off">
+        <button id="search-close-btn" class="search-close-btn" aria-label="Close search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 18px; height: 18px;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <ul id="search-results-list" class="search-results-list" role="listbox">
+        <!-- Dynamically injected via search.js -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ENTERPRISE DOCUMENTARY FOOTER
+       ========================================================================== -->
+  <footer class="editorial-footer" role="contentinfo">
+    <div class="editorial-container">
+      <div class="footer-columns-grid">
+        <div>
+          <img src="assets/brand/nvidia_logo.svg" alt="NVIDIA" style="width: 132px; height: auto;">
+          <p class="footer-brand-statement">
+            NVIDIA is the pioneer of GPU-accelerated computing. We specialize in products and platforms for the large, growing markets of gaming, professional visualization, data center, and automotive.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Story Chapters</div>
+          <ul class="footer-links-list">
+            <li><a href="#jensen-vision">02 &bull; Jensen Huang</a></li>
+            <li><a href="#people-culture-pinned">03 &bull; People &amp; Culture</a></li>
+            <li><a href="#headquarters">04 &bull; Architecture Campus</a></li>
+            <li><a href="#tech-progression-pinned">05 &bull; The Progression</a></li>
+            <li><a href="#pinned-products">06 &bull; Hardware Inventions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Platforms</div>
+          <ul class="footer-links-list">
+            <li><a href="#datacenter-ai">Blackwell &amp; DGX NVL72</a></li>
+            <li><a href="#gaming-rtx">GeForce RTX Gaming</a></li>
+            <li><a href="#physical-ai">DRIVE Thor Autonomous</a></li>
+            <li><a href="#physical-ai">Omniverse &amp; Isaac Sim</a></li>
+            <li><a href="#quantum-research">CUDA-Q Quantum</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Corporate &amp; Legal</div>
+          <ul class="footer-links-list">
+            <li><a href="https://www.nvidia.com" target="_blank" rel="noopener">NVIDIA Official Site &nearr;</a></li>
+            <li><a href="https://investor.nvidia.com" target="_blank" rel="noopener">Investor Relations &nearr;</a></li>
+            <li><a href="https://www.nvidia.com/en-us/about-nvidia/careers/" target="_blank" rel="noopener">Careers at NVIDIA &nearr;</a></li>
+            <li><a href="assets/manifest.json" target="_blank">Asset Provenance Manifest</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 NVIDIA Corporation. All rights reserved. Documentary Experience.</div>
+        <div style="font-family: var(--font-mono); color: var(--color-brand-green); font-weight: bold;">TELEMETRY: VERIFIED AUTHENTIC HISTORICAL ASSETS</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Entry Point Module -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

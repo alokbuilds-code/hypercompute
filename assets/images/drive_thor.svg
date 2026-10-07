@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none" aria-label="NVIDIA DRIVE Thor Architecture">
+  <rect width="100%" height="100%" fill="#0a0a0a"/>
+  
+  <rect x="70" y="40" width="660" height="420" rx="8" fill="#141414" stroke="#2a2a2a" stroke-width="2"/>
+  <rect x="70" y="40" width="660" height="50" rx="6" fill="#0d0d0d" stroke="#222"/>
+  <text x="100" y="72" fill="#fff" font-family="sans-serif" font-weight="bold" font-size="15" letter-spacing="1">NVIDIA DRIVE THOR / CENTRALIZED AV SUPERCHIP</text>
+  <text x="700" y="72" fill="#76B900" font-family="monospace" font-size="11" text-anchor="end">2,000 TFLOPS FP4 / BLACKWELL ARCH</text>
+
+  <!-- Central Die Sections -->
+  <g fill="#1a1a1a" stroke="#333" stroke-width="1.5">
+    <!-- Blackwell GPU Section -->
+    <rect x="100" y="110" width="280" height="240" rx="4"/>
+    <!-- Grace CPU Section -->
+    <rect x="400" y="110" width="300" height="110" rx="4"/>
+    <!-- Safety Island & Vision -->
+    <rect x="400" y="240" width="140" height="110" rx="4"/>
+    <rect x="560" y="240" width="140" height="110" rx="4"/>
+    <!-- Unified High Speed IO -->
+    <rect x="100" y="370" width="600" height="70" rx="4" fill="#1c2b10" stroke="#76B900"/>
+  </g>
+
+  <text x="240" y="140" fill="#76B900" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">BLACKWELL GPU CLUSTERS</text>
+  <text x="240" y="160" fill="#aaa" font-family="monospace" font-size="10" text-anchor="middle">GenAI / Transformer Engine / NVFP4</text>
+  
+  <!-- Blackwell sub-blocks inside Thor -->
+  <g fill="#242424" stroke="#76B900" stroke-width="0.5" opacity="0.8">
+    <rect x="120" y="180" width="110" height="70" rx="2"/>
+    <rect x="250" y="180" width="110" height="70" rx="2"/>
+    <rect x="120" y="260" width="240" height="70" rx="2" fill="#1c1c1c"/>
+  </g>
+  <text x="175" y="220" fill="#eee" font-family="monospace" font-size="9" text-anchor="middle">VISION AI CORES</text>
+  <text x="305" y="220" fill="#eee" font-family="monospace" font-size="9" text-anchor="middle">TRANSFORMER ENG</text>
+  <text x="240" y="300" fill="#76B900" font-family="monospace" font-size="10" text-anchor="middle">MULTIMODAL AV AGENTS (DRIVE Concierge)</text>
+
+  <!-- Grace CPU text -->
+  <text x="550" y="145" fill="#fff" font-family="monospace" font-weight="bold" font-size="12" text-anchor="middle">NVIDIA GRACE CPU CORE COMPLEX</text>
+  <text x="550" y="170" fill="#aaa" font-family="monospace" font-size="10" text-anchor="middle">Arm Neoverse V2 / Ultra-low latency path planning</text>
+  <line x1="420" y1="185" x2="680" y2="185" stroke="#333"/>
+  <text x="550" y="202" fill="#76B900" font-family="monospace" font-size="9" text-anchor="middle">COHERENT 900 GB/s C2C LINK</text>
+
+  <!-- Safety & Vision Blocks -->
+  <text x="470" y="275" fill="#fff" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">ASIL-D SAFETY</text>
+  <text x="470" y="295" fill="#888" font-family="monospace" font-size="8" text-anchor="middle">Hardware Lockstep</text>
+  <text x="470" y="315" fill="#76B900" font-family="monospace" font-size="8" text-anchor="middle">ISO 26262 Compliant</text>
+
+  <text x="630" y="275" fill="#fff" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">SENSOR INGESTION</text>
+  <text x="630" y="295" fill="#888" font-family="monospace" font-size="8" text-anchor="middle">Cameras, LiDAR, Radar</text>
+  <text x="630" y="315" fill="#76B900" font-family="monospace" font-size="8" text-anchor="middle">Ethernet & GMSL2 PHY</text>
+
+  <!-- IO Bus -->
+  <text x="400" y="405" fill="#fff" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">UNIFIED COCKPIT + INFOTAINMENT + AUTONOMOUS DRIVING</text>
+  <text x="400" y="425" fill="#76B900" font-family="monospace" font-size="9" text-anchor="middle">Single Central Computer replaces dozens of discrete electronic control units (ECUs)</text>
+</svg>

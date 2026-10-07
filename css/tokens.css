@@ -1,0 +1,121 @@
+/**
+ * NVIDIA — BEYOND ACCELERATION
+ * Design Tokens: Rich Forest Graphite & NVIDIA Green Visual System
+ * 
+ * Target Palette:
+ * - Visible deep graphite & dark emerald/forest green surfaces
+ * - Clear tonal separation between sections (never crushed black)
+ * - Strategic NVIDIA Green (#76B900) highlights
+ * - High-contrast readable typography
+ */
+
+:root {
+  /* Rich Forest Graphite Surfaces (Distinct Tonal Layers) */
+  --color-bg-base: #0a120a;
+  --color-bg-secondary: #0e190e;
+  --color-bg-tertiary: #132214;
+  --color-bg-surface: #162817;
+  --color-bg-surface-elevated: #1b321c;
+  --color-bg-surface-card: #132314;
+  --color-bg-surface-hover: #1f3b21;
+  --color-bg-modal: rgba(10, 18, 10, 0.97);
+
+  /* Deep Forest Tonal Accents */
+  --color-forest-deep: #070e07;
+  --color-forest-dark: #0c160c;
+  --color-forest-mid: #152716;
+  --color-forest-light: #203c21;
+
+  /* Strategic NVIDIA Green (#76B900) */
+  --color-brand-green: #76B900;
+  --color-brand-green-hover: #8ae000;
+  --color-brand-green-bright: #96f005;
+  --color-brand-green-tint: rgba(118, 185, 0, 0.10);
+  --color-brand-green-dim: rgba(118, 185, 0, 0.20);
+  --color-brand-green-mid: rgba(118, 185, 0, 0.38);
+  --color-brand-green-border: rgba(118, 185, 0, 0.45);
+  --color-brand-green-border-strong: rgba(118, 185, 0, 0.80);
+  --color-brand-green-glow: rgba(118, 185, 0, 0.30);
+
+  /* Typography Colors */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #c8d8c9;
+  --color-text-muted: #8fa690;
+  --color-text-dim: #607961;
+
+  /* Ambient Atmospheric Gradients */
+  --gradient-hero: radial-gradient(circle at 65% 35%, rgba(118, 185, 0, 0.18) 0%, rgba(14, 25, 14, 0.95) 60%, #0a120a 100%);
+  --gradient-section-dark: linear-gradient(180deg, #0e190e 0%, #0a120a 100%);
+  --gradient-section-elevated: linear-gradient(180deg, #132214 0%, #0e190e 100%);
+  --gradient-card: linear-gradient(135deg, rgba(118, 185, 0, 0.14) 0%, rgba(22, 40, 23, 0.9) 100%);
+
+  /* Green-Infused Restrained Dividers and Borders */
+  --border-subtle: rgba(118, 185, 0, 0.18);
+  --border-medium: rgba(118, 185, 0, 0.35);
+  --border-strong: rgba(118, 185, 0, 0.60);
+
+  /* Typography Stacks */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  --font-editorial: "NVIDIA Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Monumental & Editorial Fluid Typography Scale */
+  --fs-monumental: clamp(3.75rem, 9.5vw, 10rem);  /* Clean monumental scale */
+  --fs-heading-xl: clamp(2.5rem, 5.8vw, 5.8rem);
+  --fs-heading-lg: clamp(1.85rem, 3.8vw, 3.4rem);
+  --fs-heading-md: clamp(1.4rem, 2.4vw, 2.4rem);
+  --fs-heading-sm: clamp(1.15rem, 1.6vw, 1.6rem);
+  --fs-body-lg: clamp(1.1rem, 1.3vw, 1.3rem);
+  --fs-body: clamp(0.98rem, 1.05vw, 1.08rem);
+  --fs-caption: clamp(0.82rem, 0.88vw, 0.92rem);
+  --fs-mono-sm: clamp(0.74rem, 0.78vw, 0.84rem);
+  --fs-mono-xs: 0.72rem;
+
+  /* Line Heights */
+  --lh-tight: 0.98;
+  --lh-heading: 1.10;
+  --lh-editorial: 1.32;
+  --lh-body: 1.65;
+
+  /* Letter Spacings */
+  --ls-tightest: -0.045em;
+  --ls-tight: -0.025em;
+  --ls-normal: 0;
+  --ls-wide: 0.08em;
+  --ls-widest: 0.18em;
+
+  /* Spacing Scale */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 128px;
+  --space-5xl: 180px;
+
+  /* Layout Widths */
+  --max-width-editorial: 1440px;
+  --max-width-wide: 1680px;
+  --max-width-reading: 820px;
+  --header-height: 72px;
+
+  /* Transitions & Timing */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snappy: cubic-bezier(0.25, 1, 0.5, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 350ms;
+  --duration-slow: 700ms;
+  --duration-cinematic: 1200ms;
+
+  /* Z-Index Hierarchy */
+  --z-negative: -1;
+  --z-base: 1;
+  --z-sticky: 50;
+  --z-header: 100;
+  --z-drawer: 200;
+  --z-modal: 500;
+  --z-intro: 99999;
+}

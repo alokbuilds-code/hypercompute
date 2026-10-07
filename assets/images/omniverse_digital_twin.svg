@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none" aria-label="NVIDIA Omniverse Digital Twin Platform">
+  <defs>
+    <linearGradient id="omniGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c06"/>
+      <stop offset="100%" stop-color="#111a0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0a0a0a"/>
+
+  <!-- Main Container -->
+  <rect x="70" y="40" width="660" height="420" rx="8" fill="#121212" stroke="#222" stroke-width="2"/>
+  <rect x="70" y="40" width="660" height="50" rx="6" fill="#0c1208" stroke="#1f3312"/>
+  <text x="100" y="72" fill="#fff" font-family="sans-serif" font-weight="bold" font-size="15" letter-spacing="1">NVIDIA OMNIVERSE / INDUSTRIAL DIGITAL TWINS &amp; PHYSICAL AI</text>
+  <text x="700" y="72" fill="#76B900" font-family="monospace" font-size="11" text-anchor="end">OPENUSD / PHYSX 5 / RTX RENDER</text>
+
+  <!-- Flow pipeline: Physical World <-> OpenUSD Digital Twin <-> Isaac Sim / Physical AI -->
+  <g transform="translate(90, 115)">
+    <!-- Column 1: CAD / Sensor Ingestion -->
+    <rect x="0" y="0" width="180" height="230" rx="6" fill="#181818" stroke="#333"/>
+    <text x="90" y="30" fill="#76B900" font-family="monospace" font-weight="bold" font-size="11" text-anchor="middle">INGESTION &amp; CAD</text>
+    
+    <rect x="15" y="55" width="150" height="40" rx="3" fill="#222" stroke="#444"/>
+    <text x="90" y="80" fill="#eee" font-family="sans-serif" font-size="10" text-anchor="middle">Siemens / PTC / Dassault</text>
+    
+    <rect x="15" y="110" width="150" height="40" rx="3" fill="#222" stroke="#444"/>
+    <text x="90" y="135" fill="#eee" font-family="sans-serif" font-size="10" text-anchor="middle">Point Clouds &amp; LiDAR</text>
+
+    <rect x="15" y="165" width="150" height="40" rx="3" fill="#222" stroke="#444"/>
+    <text x="90" y="190" fill="#eee" font-family="sans-serif" font-size="10" text-anchor="middle">Factory Floor Telemetry</text>
+
+    <!-- Arrow 1 to 2 -->
+    <line x1="190" y1="115" x2="220" y2="115" stroke="#76B900" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Column 2: OpenUSD Nucleus Core -->
+    <rect x="220" y="0" width="180" height="230" rx="6" fill="#1b2915" stroke="#76B900" stroke-width="1.5"/>
+    <text x="310" y="30" fill="#fff" font-family="monospace" font-weight="bold" font-size="11" text-anchor="middle">OPENUSD CORE</text>
+    
+    <rect x="235" y="55" width="150" height="40" rx="3" fill="#141f10" stroke="#76B900"/>
+    <text x="310" y="80" fill="#76B900" font-family="sans-serif" font-weight="bold" font-size="10" text-anchor="middle">Omniverse Nucleus</text>
+    
+    <rect x="235" y="110" width="150" height="40" rx="3" fill="#141f10" stroke="#76B900"/>
+    <text x="310" y="135" fill="#eee" font-family="sans-serif" font-size="10" text-anchor="middle">PhysX 5 Dynamics</text>
+
+    <rect x="235" y="165" width="150" height="40" rx="3" fill="#141f10" stroke="#76B900"/>
+    <text x="310" y="190" fill="#eee" font-family="sans-serif" font-size="10" text-anchor="middle">RTX Path Tracing</text>
+
+    <!-- Arrow 2 to 3 -->
+    <line x1="410" y1="115" x2="440" y2="115" stroke="#76B900" stroke-width="2"/>
+
+    <!-- Column 3: Synthetic Data & Simulation -->
+    <rect x="440" y="0" width="180" height="230" rx="6" fill="#181818" stroke="#333"/>
+    <text x="530" y="30" fill="#76B900" font-family="monospace" font-weight="bold" font-size="11" text-anchor="middle">ROBOTICS &amp; PHYSICAL AI</text>
+    
+    <rect x="455" y="55" width="150" height="40" rx="3" fill="#222" stroke="#444"/>
+    <text x="530" y="80" fill="#eee" font-family="sans-serif" font-size="10" text-anchor="middle">Isaac Sim (AMRs / Arms)</text>
+    
+    <rect x="455" y="110" width="150" height="40" rx="3" fill="#222" stroke="#444"/>
+    <text x="530" y="135" fill="#eee" font-family="sans-serif" font-size="10" text-anchor="middle">Project GR00T Humanoids</text>
+
+    <rect x="455" y="165" width="150" height="40" rx="3" fill="#222" stroke="#444"/>
+    <text x="530" y="190" fill="#eee" font-family="sans-serif" font-size="10" text-anchor="middle">Mega GPU Simulation</text>
+  </g>
+
+  <!-- Bottom Bar: Closed Loop Physical-AI Feedback -->
+  <rect x="90" y="365" width="620" height="70" rx="4" fill="#141414" stroke="#333"/>
+  <text x="400" y="395" fill="#76B900" font-family="monospace" font-weight="bold" font-size="11" text-anchor="middle">SYNTHETIC-TO-REAL CLOSED LOOP LEARNING</text>
+  <text x="400" y="415" fill="#aaa" font-family="sans-serif" font-size="10" text-anchor="middle">Robots and autonomous systems train across millions of physics-accurate synthetic scenarios prior to factory deployment.</text>
+</svg>

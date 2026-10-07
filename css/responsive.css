@@ -1,0 +1,168 @@
+/**
+ * NVIDIA — BEYOND ACCELERATION
+ * Responsive Breakpoints & Viewport Adaptations
+ */
+
+/* Desktop Narrow (<= 1200px) */
+@media (max-width: 1200px) {
+  .campus-specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-columns-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+/* Tablet & Smaller Desktop (<= 992px) */
+@media (max-width: 992px) {
+  .hero-split-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .split-editorial-grid,
+  .split-editorial-grid--reverse {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .culture-history-banner {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .editorial-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .product-stage-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .datacenter-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .robotics-triad-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links-list {
+    display: none; /* Accessible via mobile drawer or jump menu */
+  }
+
+  .monumental-quote {
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+  }
+}
+
+/* Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .narrative-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .jensen-reveal-section {
+    padding-top: calc(var(--header-height) + 30px);
+  }
+
+  .jensen-portrait-img {
+    height: 420px;
+  }
+
+  .portrait-badge-overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 14px 16px;
+  }
+
+  .portrait-badge-meta {
+    text-align: left;
+  }
+
+  .leadership-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campus-specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-progression-bar {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .pipeline-node {
+    min-width: 90px;
+  }
+
+  .product-pinned-item {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .product-pinned-media {
+    max-height: 240px;
+  }
+
+  .people-layers-container {
+    height: 380px;
+  }
+
+  .progression-steps-display {
+    height: 340px;
+  }
+
+  .progression-wordmark {
+    font-size: clamp(2rem, 9vw, 3.5rem);
+  }
+
+  .progression-stepper-ribbon {
+    gap: 8px;
+  }
+
+  .step-indicator-pill {
+    font-size: 11px;
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+
+  .footer-columns-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+/* Very Small Mobile Screens (<= 480px) */
+@media (max-width: 480px) {
+  .editorial-container,
+  .editorial-container-wide {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .monumental-heading {
+    font-size: clamp(2.5rem, 11vw, 3.5rem);
+  }
+
+  .search-trigger-btn span {
+    display: none;
+  }
+}
